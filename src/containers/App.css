@@ -1,0 +1,12 @@
+.background-svg {
+  position: absolute;
+  width: 100vw;
+  z-index: 0;
+  background: url("../assets/images/bg-mobile.svg");
+}
+
+@media screen and (min-width: 768px) {
+  .background-svg {
+    background: url("../assets/images/bg-desktop.svg");
+  }
+}

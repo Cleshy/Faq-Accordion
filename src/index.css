@@ -4,8 +4,6 @@
 
 body {
   background-color: hsl(275, 100%, 97%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  font-family: "Work Sans";
 }
