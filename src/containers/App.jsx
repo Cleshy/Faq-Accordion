@@ -18,6 +18,7 @@ function App() {
                 key={index}
                 heading={data.heading}
                 description={data.description}
+                status={data.open}
               />
             );
           })}
