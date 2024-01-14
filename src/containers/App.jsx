@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 import Accordion from "./Accordion";
 import CardContainer from "./CardContainer";
-import bgSvg from "../assets/images/bg-desktop.svg";
 import "./App.css";
 import { accordionData } from "../accordionData";
 
 function App() {
   return (
-    <div>
-      <img className="absolute w-screen z-0" src={bgSvg} alt="" />
+    <main>
       <CardContainer>
         <Card>
           {accordionData.map((data, index) => {
@@ -18,13 +16,12 @@ function App() {
                 key={index}
                 heading={data.heading}
                 description={data.description}
-                status={data.open}
               />
             );
           })}
         </Card>
       </CardContainer>
-    </div>
+    </main>
   );
 }
 
